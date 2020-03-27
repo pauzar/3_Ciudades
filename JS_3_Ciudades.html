@@ -1,0 +1,138 @@
+<script>
+
+//FASE 1 (2 punts)
+//● Crea sis variables tipu string buides. (0,5 punts)
+var ciutat1 = "";
+var ciutat2 = "";
+var ciutat3 = "";
+var ciutat4 = "";
+var ciutat5 = "";
+var ciutat6 = "";
+
+//● Demana per consola que s’introdueixin els noms. (0,5 punts)
+//● Introdueix els següents noms de ciutats (Barcelona, Madrid, Valencia, Malaga, Cadis, Santander) per
+//teclat. (0,5 punts)
+console.log("Introduzca 6 nombres de ciudades");
+var ciutat1 = prompt("Introduzca la primera","");
+var ciutat2 = prompt("Introduzca la segunda","");
+var ciutat3 = prompt("Introduzca la tercera","");
+var ciutat4 = prompt("Introduzca la cuarta","");
+var ciutat5 = prompt("Introduzca la quinta","");
+var ciutat6 = prompt("Introduzca la sexta","");
+
+//● Mostra per consola el nom de les 6 ciutats. (0,5 punts)
+console.log("El nombre de la ciudad es "+ciutat1);
+console.log("El nombre de la ciudad es "+ciutat2);
+console.log("El nombre de la ciudad es "+ciutat3);
+console.log("El nombre de la ciudad es "+ciutat4);
+console.log("El nombre de la ciudad es "+ciutat5);
+console.log("El nombre de la ciudad es "+ciutat6);
+
+//FASE 2 (2 punts)
+//● Un cop tenim els noms de les ciutats guardats en variables haurem de pasar l’informacio a un array (arrayCiutats). (1 punt)
+Arrayciutats = new Array;
+Arrayciutats.push(ciutat1);
+Arrayciutats.push(ciutat2);
+Arrayciutats.push(ciutat3);
+Arrayciutats.push(ciutat4);
+Arrayciutats.push(ciutat5);
+Arrayciutats.push(ciutat6);
+//● Quan tinguem l’array ple, haurem de mostrar per consola el nom de les ciutats ordenadas per ordre
+//alfabetic. (1 punt)
+let arrayvoc= ["U","O","I","E","A"];
+//$$$$$Puede haber otra manera!! 
+for(z=0;z<5;z++)
+{
+    i=0;
+    j=i+1;
+    for(i=0;i<4;i++)
+    {
+        j=i+1;
+        if(Arrayciutats[i]>Arrayciutats[j])
+        {
+            var decambio = Arrayciutats[i];
+            Arrayciutats[i]=Arrayciutats[j];
+            Arrayciutats[j]=decambio;
+        }
+    }
+}
+console.log(Arrayciutats);
+
+//FASE 3 (3 punts)
+//● Cambieu les vocals “a” dels noms de les ciutats per el numero 4 i guardeu els noms modificats en un nou
+//array(ArrayCiutatsModificades). (2 punts)
+
+Arrayciutatsmodif = new Array;
+
+Arrayciutatsmodif[0]=Arrayciutats[0].replace("a","4");
+Arrayciutatsmodif[1]=Arrayciutats[1].replace("a","4");
+Arrayciutatsmodif[2]=Arrayciutats[2].replace("a","4");
+Arrayciutatsmodif[3]=Arrayciutats[3].replace("a","4");
+Arrayciutatsmodif[4]=Arrayciutats[4].replace("a","4");
+Arrayciutatsmodif[5]=Arrayciutats[5].replace("a","4");
+console.log(Arrayciutatsmodif);
+
+//● Mostreu per consola l’array modificat i ordenat per ordre alfabetic. (1 punt)
+
+//FASE 4 (3 punts)
+//●Creeu un nou array per cada una de les ciutats que tenim. La mida dels nous arrays sera la
+//llargada de cada string ( string nomCiutat.Length). (0,5 punts)
+//● Ompliu els nous arrays lletra per lletra.(2 punts)
+//● Mostreu per consola els nous arrays amb els noms invertits (Ex: Barcelona - anolecraB). (0,5 punts)
+var ciutat0 = Arrayciutats[0];
+var ciutat1 = Arrayciutats[1];
+var ciutat2 = Arrayciutats[2];
+var ciutat3 = Arrayciutats[3];
+var ciutat4 = Arrayciutats[4];
+var ciutat5 = Arrayciutats[5];
+
+Arrayciutat0 = new Array;
+Arrayciutat1 = new Array;
+Arrayciutat2 = new Array;
+Arrayciutat3 = new Array;
+Arrayciutat4 = new Array;
+Arrayciutat5 = new Array;
+
+
+for (m=0;m<ciutat0.length;m++)
+{
+    Arrayciutat0[ciutat0.length-1-m]= ciutat0.substring(m,m+1);
+}
+console.log(Arrayciutat0);
+
+
+for (m=0;m<ciutat1.length;m++)
+{
+    Arrayciutat1[ciutat1.length-1-m]= ciutat1.substring(m,m+1);
+}
+console.log(Arrayciutat1);
+
+
+for (m=0;m<ciutat2.length;m++)
+{
+    Arrayciutat2[ciutat2.length-1-m]= ciutat2.substring(m,m+1);
+}
+console.log(Arrayciutat2);
+
+
+for (m=0;m<ciutat3.length;m++)
+{
+    Arrayciutat3[ciutat3.length-1-m]= ciutat3.substring(m,m+1);
+}
+console.log(Arrayciutat3);
+
+
+for (m=0;m<ciutat4.length;m++)
+{
+    Arrayciutat4[ciutat4.length-1-m]= ciutat4.substring(m,m+1);
+}
+console.log(Arrayciutat4);
+
+
+for (m=0;m<ciutat5.length;m++)
+{
+    Arrayciutat5[ciutat5.length-1-m]= ciutat5.substring(m,m+1);
+}
+console.log(Arrayciutat5);
+
+</script>
